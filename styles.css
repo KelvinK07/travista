@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    user-select: none;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #F0F0F0;
@@ -82,7 +84,9 @@ body{
 /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
 
 .hiro{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .hiroDarkOverlay{
@@ -97,12 +101,13 @@ body{
     max-width: 1920px;
     height: 800px;
     object-fit:cover;
-    position: fixed;
+    position: absolute;
 }
 .hiroText{
-    padding: 100px 120px;
+    padding: 100px 20px;
+    max-width: 1440px; 
     position: relative;
-    width: 70%;
+    width: 100%;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -136,6 +141,7 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     display: flex;
+    cursor: pointer;
 }
 .hiroButtonText{
     width: 80%;
@@ -144,13 +150,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    z-index: 1;
 }
 .hiroButtonText p{
+    opacity: 1;
     color: black;
     font-size: 1rem;
     font-weight: 600;
     text-shadow: none;
-    
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: absolute;
 }
 .hiroButtonArrow{
     width: 20%;
@@ -159,6 +177,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
 }
 .hiroButtonArrow img{
     width: 24px;
@@ -166,3 +189,255 @@ body{
     object-fit: cover;
 
 }
+.hiroButton:hover .hiroButtonText{
+    width: 0%;
+    
+}
+.hiroButton:hover .hiroButtonText p{
+    opacity: 0;
+    
+}
+.hiroButton:hover .hiroButtonArrow{
+    width: 100%;
+}
+
+.hiroText a{
+    width: 100%;
+    height: 8vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------Destinations--------------------------------- */
+/* background: linear-gradient(90deg,#ae67fa 1.84%,#f49867 102.67%);
+-webkit-text-fill-color: transparent;
+background-clip: text;
+-webkit-background-clip: text; */
+
+.destination{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.destinationContainer{
+    max-width: 1440px;
+    padding: 100px 20px;
+}
+.destinationTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.destinationTitle h2{
+    font-size: 3rem;
+    color: #0071C1;
+}
+.destinationTitle p{
+    font-size: 1,2rem;
+    color:#5A5A5A;
+    
+}
+.destinationBase{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    
+}
+.destinationCard img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    position: relative;
+    
+}
+.destinationCardImageOverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.destinationCardImage{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    position: relative;
+    
+}
+.destinationCard{
+    width: 30%;
+    height: 65vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+.destinationCardText{
+    width: 100%;
+    padding:  20px 20px 20px 20px;
+    overflow-y: hidden;
+}
+.destinationCardText h3{
+    font-size: 1.9rem;
+    color: #0071C1;
+    font-weight: 600;
+}
+.destinationCardText p{
+    font-size: 1.25rem;
+    color:#5A5A5A;
+}
+.destinationCardButton{
+    width: 100%;
+    padding:  20px 20px 20px 20px;
+    background-color: #FFD400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    background: linear-gradient(90deg,#FFD400 100%,#c2a200 150%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    
+}
+.destinationCardButton h2{
+    color: #0071C1;
+}
+.destinationCard a{
+    width: 100%;
+    overflow: hidden;
+}
+.destinationCard:hover img{
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+}
+.destinationCard:hover .destinationCardImageOverlay{
+    opacity: 1;
+}
+.destinationCardButton:hover h2{
+    color: white;
+}
+.destinationCardButton:hover{
+    background-color: white;
+    background: linear-gradient(90deg,#ae67fa -200%,#f49867 102.67%)
+}
+
+
+/*-------------------------------------------------------------------CTA---------------------------------------------------------------------------*/
+
+
+
+.cta{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ctaContainer{
+    max-width: 1440px;
+    padding: 100px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.ctaImg{
+    width: 70%;
+    position: absolute;
+    right: 0;
+    border-radius: 20px 0px 0px 20px;
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px;
+    -ms-border-radius: 20px 0px 0px 20px;
+    -o-border-radius: 20px 0px 0px 20px;
+}
+.ctaImg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ctaText{
+    width: 60%;
+    background-color: #0071C1CC;
+    height: 60vh;
+    z-index: 5;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.ctaText h1{
+    font-family: Comforter;
+    font-weight: 400;
+    font-size: 7rem;
+    color: #FFD400;
+    overflow: hidden;
+}
+.ctaText p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    overflow: hidden;
+}
+.ctaText h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #FFD400;
+    overflow: hidden;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.ctaText a:hover h2{
+    color: #F0F0F0;
+}
+
