@@ -35,6 +35,13 @@ body{
     width: 45%;
     padding: 20px 0px;
 }
+.navigator ul img{
+    width: 28px;
+}
+.navigator ul li:last-child{
+    display: none;
+}
+
 .navigator li{
     margin: 0px 30px;
     font-size: 1.4rem;
@@ -79,6 +86,12 @@ body{
 }
 .buttoncase a{
     text-decoration: none;
+}
+.button:hover p{
+    color: #F0F0F0;
+}
+.navlink:hover{
+    color: #a3a3a3;
 }
 
 /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
@@ -245,6 +258,9 @@ background-clip: text;
     color:#5A5A5A;
     
 }
+.destinationTitle p:hover{
+    text-decoration: underline;
+}
 .destinationBase{
     margin: 40px 0px;
     display: flex;
@@ -291,6 +307,7 @@ background-clip: text;
     
 }
 .destinationCard{
+    background-color: white;
     width: 30%;
     height: 65vh;
     border-radius: 15px;
@@ -357,7 +374,7 @@ background-clip: text;
 }
 .destinationCardButton:hover{
     background-color: white;
-    background: linear-gradient(90deg,#ae67fa -200%,#f49867 102.67%)
+    background: linear-gradient(90deg,#0071C1 -50%,#00375f 102.67%)
 }
 
 
@@ -399,18 +416,44 @@ background-clip: text;
 .ctaText{
     width: 60%;
     background-color: #0071C1CC;
-    height: 60vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 5;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    padding: 50px;
+    padding: 30px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     overflow: hidden;
+}
+.ctaTextButton{
+    margin: 30px 0px 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.ctaTextButton a{
+    padding: 15px 50px;
+    background-color: transparent;
+    border: solid 3px #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -ms-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
 }
 .ctaText h1{
     font-family: Comforter;
@@ -418,6 +461,7 @@ background-clip: text;
     font-size: 7rem;
     color: #FFD400;
     overflow: hidden;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 .ctaText p{
     font-size: 1.5rem;
@@ -426,18 +470,637 @@ background-clip: text;
     overflow: hidden;
 }
 .ctaText h2{
+    
     font-size: 2rem;
     text-align: center;
-    margin-top: 20px;
-    color: #FFD400;
+
+    color: #F0F0F0;
     overflow: hidden;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
 }
 .ctaText a:hover h2{
-    color: #F0F0F0;
+    color: #0071C1;
+}
+.ctaText a:hover {
+    background-color: #FFD400;
+    border: solid 3px #FFD400;
 }
 
+/*-------------------------------------------------------------------CTA LEFT---------------------------------------------------------------------------*/
+
+
+
+.ctaL{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ctaLContainer{
+    max-width: 1440px;
+    padding: 100px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ctaLImg{
+    width: 70%;
+    position: absolute;
+    left: 0;
+    border-radius: 0px 20px 20px 0px;
+    -webkit-border-radius: 0px 20px 20px 0px;
+    -moz-border-radius: 0px 20px 20px 0px;
+    -ms-border-radius: 0px 20px 20px 0px;
+    -o-border-radius: 0px 20px 20px 0px;
+}
+.ctaLImg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ctaLText{
+    width: 60%;
+    background-color: #0071C1CC;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.ctaLTextButton{
+    margin: 30px 0px 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.ctaLTextButton a{
+    padding: 15px 50px;
+    background-color: transparent;
+    border: solid 3px #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -ms-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+.ctaLText h1{
+    font-family: Comforter;
+    font-weight: 400;
+    font-size: 7rem;
+    color: #FFD400;
+    overflow: hidden;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.ctaLText p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    overflow: hidden;
+}
+.ctaLText h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #F0F0F0;
+    overflow: hidden;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.ctaLText a:hover h2{
+    color: #0071C1;
+}
+.ctaLText a:hover {
+    background-color: #FFD400;
+    border: solid 3px #FFD400;
+}
+
+
+/* -------------------------------------------------------------WHAT WE SERVE--------------------------------------------------- */
+.whatWeServe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatWeServeContainer{
+    max-width: 1440px;
+    padding: 100px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.whatWeServeContainerText{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whatWeServeContainerText h2{
+    font-size: 1.375rem;
+    color: #5A5A5A;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.whatWeServeContainerText h1{
+    font-size: 3rem;
+    color: #0071C1;
+    font-weight: 700;
+}
+.whatWeServeContainerText p{
+    font-size: 1.25rem;
+    color: #8D8D8D;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.whatWeServeContainerButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 20px ;
+}
+.whatWeServeContainerButtons a{
+    background-color: white;
+    padding: 80px 30px;
+    width: 30%;
+    box-shadow: 4px 2px 20px rgba(0, 0, 0, 0.2);
+    border: solid 4px transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+.whatWeServeContainerButtons a:hover {
+    border: solid 4px #0071C1;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+.whatWeServeButtons{
+    width: 100%;
+    
+    
+}
+.whatWeServeButtons h2{
+    font-size: 2rem;
+    margin: 20px 0px;
+    color: #0071C1;
+}
+.whatWeServeButtons p{
+    font-size: 1.5rem;
+    color: #5A5A5A;
+}
+.whatWeServeButtons img{
+    width: 15%;
+}
+
+
+/* ------------------------------------------------------------Frequently Ask Question----------------------------------------------------------------- */
+
+.FAQ{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+.FAQContainer{
+    max-width: 1440px;
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.FAQContainer h1{
+    font-size: 3rem;
+    color: #0071C1;
+    font-weight: 700;
+}
+.FAQContainerButtons{
+    margin-top: 40px;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.FAQContainerButtons a{
+    background-color: white;
+    width: 100%;
+    padding: 20px 50px;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin: 20px;
+}
+.FAQButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.FAQButtons h2{
+    font-size: 1.375rem;
+    color: #0071C1;
+}
+.FAQButtons img{
+    width: 5%;
+}
+
+
+
+/* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+
+footer{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.footerContainer{
+    padding: 100px 20px;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.footerContainer img{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    z-index: -5;
+}
+.footerContainerButton img{
+    position: relative;
+    width: 20%;
+}
+.footerContainerText{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.footerContainerText-AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 40px;
+}
+.footerContainerText-AboutUs h2{
+    color: #0071C1;
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+}
+.footerContainerText-AboutUs li{
+    margin-bottom: 4px;
+    
+}
+/* .footerContainerText-AboutUs ul{
+    list-style-type: "➤ " ; 
+    list-style-position: inside;
+} */
+.footerContainerText-Connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}   
+.footerContainerText-Connect h2{
+    color: #0071C1;
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+}
+.footerContainerText-Connect-Buttons{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 0px 20px 0px;
+    
+}
+.footerContainerText-Connect-Buttons a{
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -ms-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+.footerContainerText-Connect-Buttons img{
+    position: relative;
+    width: 80%;
+}
+.footerContainerText-Connect-Buttons a:hover{
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+
+/* -----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-----------------------------------TABLET---------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width : 768px) {
+    .navigator{
+        padding: 20px 30px;
+    }
+    .navigator ul li:nth-child(1), .navigator ul li:nth-child(2), .navigator ul li:nth-child(3){
+        display: none;
+    }
+    .navigator ul li:last-child{
+        display: block;
+    }
+    .navigator ul{
+        width: 25%;
+    }
+    .button{
+        padding: 15px 15px;
+    }
+    .button p{
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
+
+   
+    .hiroDarkOverlay{
+        height: 700px;
+    }
+    #hiroImage{
+        height: 700px;
+    }
+    .hiroText{
+        padding: 100px 20px;
+        height: 700px;
+    }
+    .hiroText h1{
+        font-size: 5rem ;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .hiroText h2{
+        font-size: 3.5rem ;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .hiroText p{
+        font-size: 1.25rem ;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .hiroButtonText p{
+        text-shadow: none;
+    }
+    /* -------------------------------------------------------Destinations--------------------------------- */
+
+    .destinationContainer{
+        padding: 100px 30px;
+    }
+    .destinationTitle h2{
+        font-size: 2.5rem;
+    }
+    .destinationTitle p{
+        font-size: 1rem;
+        
+    }
+    .destinationBase{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .destinationCard{
+        width: 40%;
+        height: 55vh;
+        flex-grow: 1;  
+    }
+    .destinationCardText h3{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .destinationCardText p{
+        font-size: 1rem;
+    }
+    /*-------------------------------------------------------------------CTA---------------------------------------------------------------------------*/
+
+
+    .cta{
+        height: auto;
+    }
+    .ctaContainer{
+        padding: 50px 30px;
+    }
+    .ctaImg{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        -webkit-border-radius: 0px 0px 0px 0px;
+        -moz-border-radius: 0px 0px 0px 0px;
+        -ms-border-radius: 0px 0px 0px 0px;
+        -o-border-radius: 0px 0px 0px 0px;
+    }
+    .ctaText{
+        width: 70%;
+        padding: 50px 30px;
+    }
+    .ctaTextButton{
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+    }
+    .ctaTextButton a{
+        padding: 10px 30px;
+    }
+    .ctaText h1{
+        font-size: 5rem;
+    }
+    .ctaText p{
+        font-size: 1rem;
+    }
+    .ctaText h2{
+        font-size: 1.5rem;
+    }
+
+    /*-------------------------------------------------------------------CTA-LEFT---------------------------------------------------------------------------*/
+
+
+    .ctaL{
+        height: auto;
+    }
+    .ctaLContainer{
+        padding: 50px 30px;
+    }
+    .ctaLImg{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        -webkit-border-radius: 0px 0px 0px 0px;
+        -moz-border-radius: 0px 0px 0px 0px;
+        -ms-border-radius: 0px 0px 0px 0px;
+        -o-border-radius: 0px 0px 0px 0px;
+    }
+    .ctaLText{
+        width: 70%;
+        padding: 50px 30px;
+    }
+    .ctaLTextButton{
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+    }
+    .ctaLTextButton a{
+        padding: 10px 30px;
+    }
+    .ctaLText h1{
+        font-size: 5rem;
+    }
+    .ctaLText p{
+        font-size: 1rem;
+    }
+    .ctaLText h2{
+        font-size: 1.5rem;
+    }
+    /* -------------------------------------------------------------WHAT WE SERVE--------------------------------------------------- */
+    .whatWeServeContainer{
+        padding: 50px 30px;
+    }
+    .whatWeServeContainerText h2{
+        font-size: 1.25rem;
+    }
+    .whatWeServeContainerText h1{
+        font-size: 2.5rem;
+    }
+    .whatWeServeContainerText p{
+        font-size: 1rem;
+    }
+
+    .whatWeServeContainerButtons{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .whatWeServeContainerButtons a{
+        max-height: 320px;
+        width: 40%;
+        overflow-y: hidden;
+    }
+    .whatWeServeButtons{
+        width: 100%;
+    }
+    .whatWeServeButtons h2{
+        font-size: 1.5rem;
+    }
+    .whatWeServeButtons p{
+        font-size: 1rem;
+    }
+    .whatWeServeButtons img{
+        width: 40px;
+    }
+    /* ------------------------------------------------------------Frequently Ask Question----------------------------------------------------------------- */
+
+    .FAQContainer{
+        padding: 100px 30px;
+    }
+    .FAQContainer h1{
+        font-size: 2.5rem;
+    }
+    .FAQContainerButtons{
+        padding: 20px 10px;
+    }
+    .FAQContainerButtons a{
+        padding: 20px 20px;
+        margin: 20px 0px;
+    }
+    .FAQButtons h2{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .FAQButtons img{
+        width: 20px;
+        height: 20px;
+    }
+    /* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+    .footerContainer{
+        padding: 100px 30px;
+    }
+
+    .footerContainer img{
+        width: 50%;
+    }
+    .footerContainerButton img{
+        position: relative;
+        width: 20%;
+    }
+    .footerContainerText-AboutUs h2{
+        font-size: 1.2rem;
+    }
+    .footerContainerText-Connect h2{
+        font-size: 1.2rem;
+    }
+    .footerContainerText-Connect-Buttons img{
+        position: relative;
+        width: 80%;
+    }
+}
