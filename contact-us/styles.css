@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F0F0F0;
+
+}
+.navigator{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.navigator img{
+    width: 220px;
+}
+.navigator ul{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 45%;
+    padding: 20px 0px;
+}
+.navigator ul img{
+    width: 28px;
+}
+.navigator ul li:last-child{
+    display: none;
+}
+
+.navigator li{
+    margin: 0px 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+
+.navlink{
+    text-decoration: none;
+    color: #5A5A5A;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.button{
+    background-color: #FFD400;
+
+    padding: 15px 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.button p{
+    margin: 0px 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0071C1;
+    text-decoration: none;
+}
+.buttoncase a{
+    text-decoration: none;
+}
+.button:hover p{
+    color: #F0F0F0;
+}
+.navlink:hover{
+    color: #a3a3a3;
+}
+/* ----------------------------------------------------------------------HIRO-------------------------------------------- */
+
+.hiro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    background-image: url("../Resources/hiro_image.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+}/* 
+.hiro img{
+    width: 100%;
+    max-width: 1920px;
+    height: 400px;
+    opacity:0.4;
+    object-fit:cover;
+    position: relative;
+    z-index: 2;
+} */
+/* ------------------------------------------------------------Contact-------------------------------------------- */
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    z-index: 5;
+    overflow: visible;
+    padding-bottom: 100px;
+}
+.contactContainer{
+    margin-top: -150px;
+    max-width: 1140px;
+    width: 85%;
+
+    border-radius: 20px;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 6;
+}
+
+
+
+.contactContainerText{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+}
+.contactContainerText h1{
+    font-size: 4rem;
+    color: #0071C1;
+}
+.contactContainerText h2{
+    font-size: 1.5rem;
+}
+.contactContainerText p{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.contactContainerImage{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contactContainerImage img{
+    width: 100%;
+    height: auto;
+}
+.contactInfo{
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.contactInfoImage{
+    width: 40%;
+}
+.contactInfoImage img{
+    width: 100%;
+    margin-right: 20px;
+}
+.contactInfoNumber{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.contactInfoNumber img{
+    width: 15%;
+}
+.contactInfoNumber h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.contactButton{
+    background-color: #FFD400;
+    padding: 15px 30px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0071C1;
+    text-decoration: none;
+}
+.contactButton:hover {
+    color: #F0F0F0;
+}
+
+/* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+
+footer{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.footerContainer{
+    padding: 100px 20px;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.footerContainer img{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    z-index: -5;
+}
+.footerContainerButton img{
+    position: relative;
+    width: 20%;
+}
+.footerContainerText{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.footerContainerText-AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 40px;
+}
+.footerContainerText-AboutUs h2{
+    color: #0071C1;
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+}
+.footerContainerText-AboutUs li{
+    margin-bottom: 4px;
+    
+}
+/* .footerContainerText-AboutUs ul{
+    list-style-type: "➤ " ; 
+    list-style-position: inside;
+} */
+.footerContainerText-Connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}   
+.footerContainerText-Connect h2{
+    color: #0071C1;
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+}
+.footerContainerText-Connect-Buttons{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 0px 20px 0px;
+    
+}
+.footerContainerText-Connect-Buttons a{
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -ms-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+}
+.footerContainerText-Connect-Buttons img{
+    position: relative;
+    width: 80%;
+}
+.footerContainerText-Connect-Buttons a:hover{
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+

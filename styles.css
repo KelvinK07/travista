@@ -899,7 +899,7 @@ footer{
         height: 700px;
     }
     .hiroText{
-        padding: 100px 20px;
+        padding: 100px 30px;
         height: 700px;
     }
     .hiroText h1{
@@ -911,7 +911,7 @@ footer{
         text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
     }
     .hiroText p{
-        font-size: 1.25rem ;
+        font-size: 1rem ;
         text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
     }
     .hiroButtonText p{
@@ -920,7 +920,7 @@ footer{
     /* -------------------------------------------------------Destinations--------------------------------- */
 
     .destinationContainer{
-        padding: 100px 30px;
+        padding: 50px 30px;
     }
     .destinationTitle h2{
         font-size: 2.5rem;
@@ -932,6 +932,7 @@ footer{
     .destinationBase{
         flex-wrap: wrap;
         gap: 30px;
+        margin-bottom: 0px;
     }
     .destinationCard{
         width: 40%;
@@ -1039,10 +1040,18 @@ footer{
         justify-content: center;
         gap: 30px;
     }
+    .whatWeServeContainerButtons a:last-child div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .whatWeServeContainerButtons a{
         max-height: 320px;
         width: 40%;
         overflow-y: hidden;
+        flex-grow: 1;
+        padding: 40px 30px;
     }
     .whatWeServeButtons{
         width: 100%;
@@ -1059,7 +1068,7 @@ footer{
     /* ------------------------------------------------------------Frequently Ask Question----------------------------------------------------------------- */
 
     .FAQContainer{
-        padding: 100px 30px;
+        padding: 50px 30px;
     }
     .FAQContainer h1{
         font-size: 2.5rem;
@@ -1083,7 +1092,7 @@ footer{
 
 
     .footerContainer{
-        padding: 100px 30px;
+        padding: 50px 30px;
     }
 
     .footerContainer img{
@@ -1102,5 +1111,321 @@ footer{
     .footerContainerText-Connect-Buttons img{
         position: relative;
         width: 80%;
+    }
+}
+/* -----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-----------------------------------MOBILE---------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:475px) {
+    .navigator{
+        padding: 0px 30px;
+        flex-wrap: wrap;
+        position: fixed;
+        background-color: #F0F0F0;
+        z-index: 50;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigator img:first-child{
+        padding: 10px 20px;
+        width: 80%;
+    }
+    .navigator ul li:nth-child(1), .navigator ul li:nth-child(2), .navigator ul li:nth-child(3){
+        display: none;
+    }
+    .navigator ul li:last-child{
+        display: block;
+        padding: 0px;
+        width: 80px;
+        margin: 0px;
+    }
+    .navigator ul{
+        width: 25%;
+    }
+    .button{
+        padding: 15px 15px;
+    }
+    .button p{
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
+
+    .hiro{
+        margin-top: 100px;
+    }
+    .hiroDarkOverlay{
+        height: 700px;
+    }
+    #hiroImage{
+        height: 700px;
+    }
+    .hiroText{
+        padding: 100px 20px;
+        height: 700px;
+        justify-content: center;
+        gap: 30px;
+    }
+    .hiroText h1{
+        font-size: 4rem ;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .hiroText h2{
+        font-size: 2.5rem ;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .hiroText p{
+        font-size: 1rem ;
+        text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+    }
+    .hiroButtonText p{
+        text-shadow: none;
+    }
+    .hiroButton{
+        width: 70%;
+    }
+    /* -------------------------------------------------------Destinations--------------------------------- */
+    .destinationTitle{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .destinationContainer{
+        padding: 50px 20px;
+    }
+    .destinationTitle h2{
+        font-size: 2.5rem;
+    }
+    .destinationTitle p{
+        font-size: 1rem;
+        
+    }
+    .destinationBase{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 0px;
+    }
+    .destinationCard{
+        width: 60%;
+        height: 45vh;
+        flex-grow: 1;  
+    }
+    .destinationCardText h3{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .destinationCardText p{
+        font-size: 0.8rem;
+    }
+    .destinationCardButton{
+        padding: 10px 20px 20px 20px;
+    }
+    .destinationCardButton h2{
+        font-size: 1.25rem;
+    }
+    /*-------------------------------------------------------------------CTA---------------------------------------------------------------------------*/
+
+
+    .cta{
+        height: auto;
+        overflow-y: hidden;
+    }
+    .ctaContainer{
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ctaImg{
+        width: 100%;
+        height: 500px;
+        border-radius: 0px 0px 0px 0px;
+        -webkit-border-radius: 0px 0px 0px 0px;
+        -moz-border-radius: 0px 0px 0px 0px;
+        -ms-border-radius: 0px 0px 0px 0px;
+        -o-border-radius: 0px 0px 0px 0px;
+        overflow: hidden;
+    }
+    .ctaText{
+        width: 90%;
+        padding: 50px 20px;
+        
+    }
+    .ctaTextButton{
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+    }
+    .ctaTextButton a{
+        padding: 10px 30px;
+    }
+    .ctaText h1{
+        font-size: 3rem;
+    }
+    .ctaText p{
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .ctaText h2{
+        font-size: 1.25rem;
+    }
+    .ctaTextButton{
+        margin: 30px 0px 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    /*-------------------------------------------------------------------CTA-LEFT---------------------------------------------------------------------------*/
+    .ctaL{
+        height: auto;
+        overflow-y: hidden;
+    }
+    .ctaLContainer{
+        padding: 50px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ctaLImg{
+        width: 100%;
+        height: 500px;
+        border-radius: 0px 0px 0px 0px;
+        -webkit-border-radius: 0px 0px 0px 0px;
+        -moz-border-radius: 0px 0px 0px 0px;
+        -ms-border-radius: 0px 0px 0px 0px;
+        -o-border-radius: 0px 0px 0px 0px;
+        overflow: hidden;
+    }
+    .ctaLText{
+        width: 90%;
+        padding: 50px 20px;
+        
+    }
+    .ctaLTextButton{
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+    }
+    .ctaLTextButton a{
+        padding: 10px 30px;
+    }
+    .ctaLText h1{
+        font-size: 3rem;
+    }
+    .ctaLText p{
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    .ctaLText h2{
+        font-size: 1.25rem;
+    }
+    .ctaLTextButton{
+        margin: 30px 0px 10px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    /* -------------------------------------------------------------WHAT WE SERVE--------------------------------------------------- */
+    .whatWeServeContainer{
+        padding: 50px 20px;
+    }
+    .whatWeServeContainerText h2{
+        font-size: 1rem;
+    }
+    .whatWeServeContainerText h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .whatWeServeContainerText p{
+        font-size: 0.8rem;
+    }
+
+    .whatWeServeContainerButtons{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .whatWeServeContainerButtons a{
+        max-height: 320px;
+        width: 60%;
+        overflow-y: hidden;
+        flex-grow: 1;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .whatWeServeButtons{
+        width: 100%;
+    }
+    .whatWeServeButtons h2{
+        font-size: 1.25rem;
+    }
+    .whatWeServeButtons p{
+        font-size: 0.8rem;
+    }
+    .whatWeServeButtons img{
+        width: 40px;
+    }
+    /* ------------------------------------------------------------Frequently Ask Question----------------------------------------------------------------- */
+
+    .FAQContainer{
+        padding: 50px 20px;
+    }
+    .FAQContainer h1{
+        font-size: 2rem;
+    }
+    .FAQContainerButtons{
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .FAQContainerButtons a{
+        padding: 20px 20px;
+        margin: 10px 0px;
+    }
+    .FAQButtons h2{
+        font-size: 0.8rem;
+        width: 90%;
+    }
+    .FAQButtons img{
+        width: 20px;
+        height: 20px;
+    }
+    /* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+    .footerContainer{
+        padding: 50px 30px;
+    }
+
+    .footerContainer img{
+        width: 0%;
+        display: none;
+    }
+    .footerContainerButton img{
+        position: relative;
+        width: 50%;
+        display: block;
+    }
+    .footerContainerText-AboutUs h2{
+        font-size: 1rem;
+    }
+    .footerContainerText-Connect h2{
+        font-size: 1rem;
+    }
+    .footerContainerText-AboutUs li{
+        font-size: 0.8rem;
+    }
+    .footerContainerText-Connect-Buttons img{
+        position: relative;
+        width: 80%;
+        display: block;
     }
 }
