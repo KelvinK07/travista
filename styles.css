@@ -196,12 +196,7 @@ body{
     -ms-transition: 0.8s;
     -o-transition: 0.8s;
 }
-.hiroButtonArrow img{
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
 
-}
 .hiroButton:hover .hiroButtonText{
     width: 0%;
     

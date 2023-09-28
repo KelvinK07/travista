@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -28,7 +27,7 @@ body{
     width: 220px;
 }
 .navigator ul{
-
+    list-style-type: none;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -121,17 +120,16 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 600px;
     position: relative;
     z-index: 5;
     overflow: visible;
     padding-bottom: 100px;
+    height: auto;
 }
 .contactContainer{
     margin-top: -150px;
     max-width: 1140px;
     width: 85%;
-
     border-radius: 20px;
     background-color: white;
     -webkit-border-radius: 20px;
@@ -154,8 +152,10 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 0px 20px;
+    overflow: hidden;
 }
 .contactContainerText h1{
     font-size: 4rem;
@@ -185,6 +185,7 @@ body{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    overflow-y: hidden;
 }
 .contactInfoImage{
     width: 40%;
@@ -199,12 +200,13 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    overflow-y: hidden;
 }
-.contactInfoNumber img{
-    width: 15%;
+.contactInfoNumber i{
+    width: 5%;
 }
 .contactInfoNumber h2{
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .contactButton{
@@ -225,11 +227,11 @@ body{
     text-decoration: none;
     color: #0071C1;
     text-decoration: none;
+    text-align: center;
 }
 .contactButton:hover {
     color: #F0F0F0;
 }
-
 /* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
 
 
@@ -326,3 +328,233 @@ footer{
     -o-transform: translateY(5px);
 }
 
+
+/* -----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-----------------------------------TABLET---------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width : 768px) {
+    .navigator{
+        padding: 20px 30px;
+        
+    }
+    .navigator ul li:nth-child(1), .navigator ul li:nth-child(2), .navigator ul li:nth-child(3){
+        display: none;
+    }
+    .navigator ul li:last-child{
+        display: block;
+    }
+    .navigator ul{
+        width: 25%;
+    }
+    .button{
+        padding: 15px 15px;
+    }
+    .button p{
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    /* ------------------------------------------------------------Contact-------------------------------------------- */
+    
+    .contactContainer{
+        padding: 30px;
+    }
+    .contactContainerText{
+        gap: 10px;
+        padding: 0px;
+    }
+    .contactContainerText h1{
+        font-size: 2rem;
+        color: #0071C1;
+    }
+    .contactContainerText h2{
+        font-size: 1rem;
+    }
+    .contactContainerText p{
+        font-size: 0.8rem;
+        margin-top: 0px;
+    }
+
+    .contactContainerText{
+        width: 60%;
+    }
+    .contactInfo{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .contactButton{
+        width: 90%;
+    }
+ 
+    /* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+    .footerContainer{
+        padding: 50px 20px;
+    }
+
+    .footerContainer img{
+        width: 50%;
+    }
+    .footerContainerButton img{
+        position: relative;
+        width: 20%;
+    }
+    .footerContainerText-AboutUs h2{
+        font-size: 0.8rem;
+    }
+    .footerContainerText-Connect h2{
+        font-size: 0.8rem;
+    }
+    .footerContainerText-Connect-Buttons img{
+        position: relative;
+        width: 80%;
+    }
+
+    
+}
+/* -----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-----------------------------------MOBILE---------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:475px) {
+    .navigator{
+        padding: 0px 30px;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        background-color: #F0F0F0;
+        z-index: 50;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigator img:first-child{
+        padding: 10px 20px;
+        width: 80%;
+    }
+    .navigator ul li:nth-child(1), .navigator ul li:nth-child(2), .navigator ul li:nth-child(3){
+        display: none;
+    }
+    .navigator ul li:last-child{
+        display: block;
+        padding: 0px;
+        width: 80px;
+        margin: 0px;
+    }
+    .navigator ul{
+        width: 25%;
+    }
+    .button{
+        padding: 15px 15px;
+    }
+    .button p{
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
+
+    .hiro{
+        margin-top: 100px;
+    }
+
+    /*--------------------------------------------------------------------Contact-------------------------------------------- */
+
+    .contactContainer{
+        padding: 20px;
+        flex-direction: column-reverse;
+        width: 90%;
+        height: auto;
+    }
+    .contactContainerText{
+        width: 100%;
+        height: 60%;
+        flex-direction: column;
+        justify-content: stretch;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+    }
+    .contactInfoNumber{
+        align-items: center;
+        justify-content: center;
+    }
+    .contactContainerText h1{
+        font-size: 2rem;
+        line-height: 1.2em;
+        color: #0071C1;
+        height: auto;
+    }
+    .contactContainerText h2{
+        font-size: 1rem;
+    }
+    .contactContainerText p{
+        font-size: 0.8rem;
+        margin-top: 0px;
+    }
+    .contactContainerImage{
+        /* margin-top: -40px;
+        margin-bottom: -20px; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40%;
+    }
+    .contactContainerImage img{
+        width: 100%;
+        height: auto;
+    }
+    .contactInfo{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contactButton{
+        width: 100%;
+    }
+    .contactButton:hover {
+        color: #F0F0F0;
+    }
+    /* ------------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+    .footerContainer{
+        padding: 50px 30px;
+    }
+
+    .footerContainer img{
+        width: 0%;
+        display: none;
+    }
+    .footerContainerButton img{
+        position: relative;
+        width: 50%;
+        display: block;
+    }
+    .footerContainerText-AboutUs h2{
+        font-size: 1rem;
+    }
+    .footerContainerText-Connect h2{
+        font-size: 1rem;
+    }
+    .footerContainerText-AboutUs li{
+        font-size: 0.8rem;
+    }
+    .footerContainerText-Connect-Buttons img{
+        position: relative;
+        width: 80%;
+        display: block;
+    }
+}
