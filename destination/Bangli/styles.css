@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F0F0F0;
+
+}
+.navigator{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.navigator img{
+    width: 220px;
+}
+.navigator ul{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 45%;
+    padding: 20px 0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.navigator ul img{
+    width: 28px;
+}
+.navigator ul li:last-child{
+    display: none;
+}
+
+.navigator li{
+    margin: 0px 30px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+
+.navlink{
+    text-decoration: none;
+    color: #5A5A5A;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.button{
+    background-color: #FFD400;
+
+    padding: 15px 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.button p{
+    margin: 0px 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0071C1;
+    text-decoration: none;
+}
+.buttoncase a{
+    text-decoration: none;
+}
+.button:hover p{
+    color: #F0F0F0;
+}
+.navlink:hover{
+    color: #a3a3a3;
+}
+
+
+
+/* ----------------------------------------------HIRO-------------------------------------------------- */
+
+
+.hiro{
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hiroContainer{
+    max-width: 1440px;
+    max-height: 700px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.mainImageContainer{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    object-fit: cover;
+}
+.smallImageContainer{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+.mainImageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.smallImageContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.smallImage{
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.greyHover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 39, 39, 0.3);
+    position:absolute;
+    opacity: 0%;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.smallImage:hover .greyHover{
+    opacity: 100%;
+}
+
+
+
+/* --------------------HEADING----------------------------------------------------------------------- */
+
+.heading{
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headingContainer{
+    max-width: 1440px;
+    width: 100%;
+}
+
+.headingTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.headingTitle h1{
+    font-size: 3rem;
+    color: #0071C1;
+    margin-bottom: 10px;
+}
+.headingTitle h3{
+    font-size: 1rem;
+    color: #a3a3a3;
+    font-weight: 600;
+}
+.headingTitle h2{
+    font-size: 1.5rem;
+    color: #0071C1;
+}
+.headingButton{
+    background-color: #FFD400;
+    padding: 15px 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.headingButton p{
+    margin: 0px 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0071C1;
+    text-decoration: none;
+}
+
+.headingButton:hover p{
+    color: #F0F0F0;
+}
+.headingTitle a{
+    width: 15%;
+}
+
+.headingInformation{
+    padding: 40px 0px;
+    /* margin-top: 20px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.headingInformation-Container{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.headingInformation-Container span{
+    color: #a3a3a3;
+    font-size: 1.20rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -ms-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+    margin-right: 2px
+}
+.headingInformation-Container span:hover{
+    color: #0071C1;
+    background-color: #FFD400;
+
+}
+
+.headingInformation-Container .active{
+    color: #0071C1;
+    background-color: #ffd50093;
+
+}
+.headingInformation-Info{
+    width: 100%;
+    padding: 50px 40px;
+    line-height: 1.5em;
+    border: 5px solid #0071C1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* .headingInformation-Info-About{
+    max-height: auto;
+    overflow: hidden;
+}
+.headingInformation-Info-Highlights{
+    list-style-position: outside;
+    padding-left: 20px;
+    max-height: 0px;         
+    overflow: hidden;
+
+}    */
+.headingInformation-Info-Highlights ul li{
+    margin-bottom: 10px;
+}
+/* .headingInformation-Info-Location{
+    max-height: 0px;
+    overflow: hidden;
+}
+.headingInformation-Info-Review{
+    max-height: 0px;         
+    overflow: hidden;
+} */
+.headingInformation-Info-Review h3{
+    color: #0071C1;
+    padding: 0px 10px;
+    border-left: 2px solid #0071C1;
+}
+.headingInformation-Info-Review h4{
+    margin-bottom: 10px;
+    color: #5A5A5A;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+.headingInformation-Info-Review p{
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+
+/* -----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-----------------------------------TABLET---------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width : 768px) {
+    .navigator{
+        padding: 20px 30px;
+    }
+    .navigator ul li:nth-child(1), .navigator ul li:nth-child(2), .navigator ul li:nth-child(3){
+        display: none;
+    }
+    .navigator ul li:last-child{
+        display: block;
+    }
+    .navigator ul{
+        width: 25%;
+    }
+    .button{
+        padding: 15px 15px;
+    }
+    .button p{
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
+
+
+    .mainImageContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+    .smallImageContainer{
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+    }
+
+    .smallImageContainer img{
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+        
+    }
+    .smallImage{
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+    }
+
+
+    /* --------------------HEADING----------------------------------------------------------------------- */
+
+    .headingTitle h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .headingTitle h2{
+        font-size: 1.2rem;
+    }
+    .headingButton{
+
+        padding: 15px 40px;
+
+    }
+    .headingButton p{
+        margin: 0px;
+    }
+    .headingTitle a{
+        width: 30%;
+    }
+
+    .headingInformation{
+        padding: 20px 0px;
+    }
+    .headingInformation-SubHeading{
+        width: 80%;
+    }
+    /* -----------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------
+    -----------------------------------Mobile---------------------------------------------
+    --------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------- */
+
+
+    @media screen and (max-width : 475px) {
+        .navigator{
+            padding: 0px 30px;
+            flex-wrap: wrap;
+            position: fixed;
+            background-color: #F0F0F0;
+            z-index: 50;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .navigator img:first-child{
+            padding: 10px 20px;
+            width: 80%;
+        }
+        .navigator ul li:nth-child(1), .navigator ul li:nth-child(2), .navigator ul li:nth-child(3){
+            display: none;
+        }
+        .navigator ul li:last-child{
+            display: block;
+            padding: 0px;
+            width: 80px;
+            margin: 0px;
+        }
+        .navigator ul{
+            width: 25%;
+        }
+        .button{
+            padding: 15px 15px;
+        }
+        .button p{
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+        /* ----------------------------------------------------------------------HIRO-------------------------------------------- */
+
+        .hiroContainer{
+            margin-top: 150px;
+        }
+
+
+        /* --------------------HEADING----------------------------------------------------------------------- */
+
+        .headingTitle h1{
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .headingTitle h2{
+            font-size: 1.2rem;
+        }
+        .headingButton{
+
+            padding: 15px 40px;
+
+        }
+        .headingButton p{
+            margin: 0px;
+        }
+        .headingTitle a{
+            width: 60%;
+        }
+
+        .headingInformation{
+            padding: 20px 0px;
+        }
+        .headingInformation-SubHeading{
+            width: 100%;
+        }
+        .headingInformation-SubHeading span{
+            color: #a3a3a3;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px 10px;
+            
+        }
+        .headingInformation-Info-About p{
+            font-size: 0.8rem;
+        }
+    }
+}
